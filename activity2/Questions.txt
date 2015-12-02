@@ -1,2 +1,13 @@
+Question: My mother and I talked last night.
+	Tell me more about your family.
+Question 2: I said no!
+	why so negative.
+Question 3: The weather is nice.
+	Intreasting, tell me more.
+Question 4: Do you know my brother?
+	Why so negative.
+
 1. If a key word is included in another word, then the program will first notice the keyword and ends its self. For instance, in the sentence "I know....", the program will notice the key word "no" in "know" and will ignore the other strings whih will cause the program to respond as "Why so negative...".
+
+2. When more than one keyword appears in a string, the output will only show one answer because we used if and else if statements.
 
