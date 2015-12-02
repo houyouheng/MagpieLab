@@ -1,0 +1,2 @@
+1. If a key word is included in another word, then the program will first notice the keyword and ends its self. For instance, in the sentence "I know....", the program will notice the key word "no" in "know" and will ignore the other strings whih will cause the program to respond as "Why so negative...".
+

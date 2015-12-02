@@ -28,24 +28,59 @@ public class Magpie2
 	 *            the user statement
 	 * @return a response based on the rules given
 	 */
-	public String getResponse(String statement)
-	{
+	public String getResponse(String statement){
+
 		String response = "";
-		if (statement.indexOf("no") >= 0)
-		{
+		String newStatement = statement.trim().toLowerCase();
+
+		if (newStatement.indexOf("no") >= 0){
 			response = "Why so negative?";
 		}
-		else if (statement.indexOf("mother") >= 0
+
+		else if (newStatement.trim().equals("")){
+			response = "Why you typing black space at me???";
+		}
+
+		else if (newStatement.indexOf("wat's up") >= 0){
+			response = "Wat's up dog!";
+		}
+
+		else if (newStatement.indexOf("who are you") >= 0){
+			response = "I am a bot !!!";
+		}
+
+		else if (newStatement.indexOf("yo") >= 0){
+			response = "Yo! Yo!! Yo!!!";
+		}
+
+		else if (newStatement.indexOf("loser") >= 0){
+			response = "You are a loser!";
+		}
+
+		else if (newStatement.indexOf("cool") >= 0){
+			response = "yup! its cool!";
+		}
+
+		else if (newStatement.indexOf("cat") >= 0
+			|| statement.indexOf ("dog") >= 0 ){
+			response = "I love pets! Tell me more!!";
+		}
+
+		else if (newStatement.indexOf("Baker") >= 0){
+			response = "He is pretty cool :).";
+		}
+
+		else if (newStatement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
-				|| statement.indexOf("brother") >= 0)
-		{
+				|| statement.indexOf("brother") >= 0){
 			response = "Tell me more about your family.";
 		}
-		else
-		{
+
+		else{
 			response = getRandomResponse();
 		}
+
 		return response;
 	}
 
